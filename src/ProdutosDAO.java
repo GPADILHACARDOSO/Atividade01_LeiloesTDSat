@@ -29,7 +29,7 @@ public class ProdutosDAO {
         try {
             conn = new conectaDAO().connectDB();
             if (conn == null) {
-                JOptionPane.showMessageDialog(null, "Conexão falhou.");
+                JOptionPane.showMessageDialog(null, "Conexão falhou. " + "Erro ao realizar o cadastro de produto.");
                 return;
             }
 
